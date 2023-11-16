@@ -61,7 +61,7 @@ textarea {
 .big_wrapper {
   display: flex;
   flex-direction: column;
-  background: #0a0a0a;
+  background: #000;
 }
 
 main {
