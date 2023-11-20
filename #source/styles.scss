@@ -656,7 +656,30 @@ main {
 }
 
 .footer {
-  padding: 45px 0;
+  padding: 20px 0;
+  .number {
+    font-size: 16px;
+    color: #fff;
+    margin-right: auto;
+
+    @media screen and (max-width: 700px) {
+      margin-right: 0;
+    }
+  }
+
+  .adress {
+    margin-left: auto;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.2;
+    max-width: 150px;
+
+    @media screen and (max-width: 700px) {
+      margin-left: 0;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
   .wrapper {
     display: flex;
     align-items: center;
@@ -664,6 +687,9 @@ main {
     gap: 15px;
     img {
       height: 37px;
+    }
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
     }
   }
 }
