@@ -66,6 +66,8 @@ textarea {
 
 main {
   flex: 1 1 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .wrapper {
@@ -133,7 +135,8 @@ main {
 }
 .header .main_img {
   width: 100%;
-  margin-top: -70px;
+  margin-top: -110px;
+  margin-bottom: -200px;
 }
 @media screen and (max-width: 400px) {
   .header .main_img {
@@ -312,6 +315,9 @@ main {
   }
 }
 
+.our_venicles {
+  margin-top: -50px;
+}
 @media screen and (max-width: 500px) {
   .our_venicles .wrapper {
     padding: 0 20px;
