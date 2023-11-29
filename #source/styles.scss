@@ -281,7 +281,7 @@ main {
   .text_block {
     width: 414px;
     font-size: 15px;
-    line-height: 1.87;
+    line-height: 2.5;
     text-align: justify;
     color: #fff;
 
@@ -357,11 +357,18 @@ main {
       background: #0000;
     }
   }
+}
 
-  .main_img {
-    margin-bottom: 25px;
-    width: 100%;
+.our_benefits {
+  position: relative;
+  .wrapper {
+    z-index: 1;
+    position: relative;
+    @media screen and (max-width: 500px) {
+      padding: 0 20px;
+    }
   }
+
   .text_block {
     p {
       margin-bottom: 25px;
@@ -376,6 +383,7 @@ main {
     display: flex;
     align-items: stretch;
     gap: 36px;
+    margin-top: 150px;
     @media screen and (max-width: 900px) {
       display: block;
     }
@@ -422,15 +430,68 @@ main {
       margin-bottom: 20px;
     }
   }
-}
 
-.our_benefits {
-  position: relative;
-  .wrapper {
-    z-index: 1;
-    position: relative;
+  .adv_list {
+    p {
+      font-size: 12px;
+      line-height: 2.222;
+      position: relative;
+      padding-left: 40px;
+      color: #fff;
+      &:after {
+        content: '';
+        top: 50%;
+        width: 30px;
+        height: 10px;
+        left: 0;
+        transform: translate(0, -50%);
+        background: #ceff00;
+        position: absolute;
+      }
+    }
+  }
+
+  .big_title {
+    background: #5d5d5d;
+    display: inline-flex;
+    align-items: stretch;
+    border-radius: 500px;
+    margin-bottom: 25px;
+    .title_1 {
+      font-size: 14px;
+      line-height: 1.4;
+      text-transform: uppercase;
+      background: #ceff00;
+      font-weight: bold;
+      padding: 8px 20px;
+      border-radius: 500px;
+      color: #000;
+      margin-right: 0px;
+      box-shadow: 20px 0px 25px -5px rgba(0, 0, 0, 0.61);
+    }
+    .title_2 {
+      display: flex;
+      align-items: center;
+
+      font-size: 15.5px;
+      font-weight: bold;
+      line-height: 1.65;
+      text-align: center;
+      color: #fff;
+      padding: 0 15px;
+      @media screen and (max-width: 500px) {
+        background: #5d5d5d;
+        border-radius: 100px;
+        margin-top: 20px;
+        padding: 8px 20px;
+        line-height: 1.4;
+        font-size: 14px;
+      }
+    }
+
     @media screen and (max-width: 500px) {
-      padding: 0 20px;
+      display: block;
+      background: #0000;
     }
   }
   .title {
@@ -487,8 +548,9 @@ main {
       }
     }
     .list {
-      font-size: 15px;
-      line-height: 1.6;
+      font-size: 12px;
+      line-height: 2.222;
+
       text-align: left;
       color: #fff;
       flex: 0 1 385px;
