@@ -259,7 +259,7 @@ main {
   width: 100%;
   margin-top: -300px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .about_us .back_img {
     margin-top: 0px;
   }
@@ -465,6 +465,10 @@ main {
   position: absolute;
   width: 80%;
   right: 0;
+  transition: 1s;
+}
+.our_benefits .main_img._active {
+  opacity: 0;
 }
 @media screen and (max-width: 500px) {
   .our_benefits .main_img {

@@ -253,7 +253,8 @@ main {
   .back_img {
     width: 100%;
     margin-top: -300px;
-    @media screen and (max-width: 500px) {
+
+    @media screen and (max-width: 1000px) {
       margin-top: -0px;
     }
   }
@@ -449,7 +450,10 @@ main {
     position: absolute;
     width: 80%;
     right: 0;
-
+    transition: 1s;
+    &._active {
+      opacity: 0;
+    }
     @media screen and (max-width: 500px) {
       width: 120%;
       top: 50%;
