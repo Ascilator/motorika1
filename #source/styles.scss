@@ -369,6 +369,15 @@ main {
     }
   }
 
+  .img_cont {
+    @media screen and (max-width: 700px) {
+      position: relative;
+      height: 350px;
+    }
+    img {
+    }
+  }
+
   .text_block {
     p {
       margin-bottom: 25px;
@@ -515,12 +524,14 @@ main {
     &._active {
       opacity: 0;
     }
-    @media screen and (max-width: 500px) {
-      width: 120%;
+    @media screen and (max-width: 700px) {
+      height: 100%;
+      width: unset;
+      object-fit: cover;
+      object-position: 100% 0;
       top: 50%;
       right: 0;
       transform: translate(0, -50%);
-      opacity: 0.2;
     }
   }
   .content_box {

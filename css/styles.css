@@ -381,6 +381,12 @@ main {
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 700px) {
+  .our_benefits .img_cont {
+    position: relative;
+    height: 350px;
+  }
+}
 .our_benefits .text_block p {
   margin-bottom: 25px;
   font-size: 15px;
@@ -529,13 +535,17 @@ main {
 .our_benefits .main_img._active {
   opacity: 0;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .our_benefits .main_img {
-    width: 120%;
+    height: 100%;
+    width: unset;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 100% 0;
+       object-position: 100% 0;
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
-    opacity: 0.2;
   }
 }
 .our_benefits .content_box .wrapper {
