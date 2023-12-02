@@ -258,6 +258,9 @@ main {
       margin-top: -0px;
     }
   }
+  @media screen and (max-width: 600px) {
+    margin-top: 100px;
+  }
 }
 
 .our_coaches {
@@ -607,15 +610,17 @@ main {
     display: flex;
     align-items: stretch;
     gap: 20px;
+    flex-wrap: wrap;
     .inside {
       @media screen and (max-width: 900px) {
         background: #9a9596;
         padding: 20px 10px;
         border-radius: 10px;
+        flex: 1 1 auto;
       }
     }
     .price_block {
-      flex: 0 1 25%;
+      flex: 0 1 calc(25% - 15px);
       img {
         width: 100%;
 
@@ -639,6 +644,12 @@ main {
         line-height: 1.15;
         text-align: center;
         color: #000;
+        height: 44px;
+        padding: 0 5px;
+
+        @media screen and (max-width: 900px) {
+          height: unset;
+        }
       }
 
       .button {
@@ -654,6 +665,11 @@ main {
         }
       }
 
+      @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
       @media screen and (max-width: 600px) {
         flex: 0 1 calc(33.333% - 15px);
       }
@@ -682,7 +698,7 @@ main {
       opacity: 0.3;
     }
     @media screen and (min-width: 1100px) {
-      height: 600px;
+      height: 1000px;
       object-fit: cover;
       object-position: 100% 100%;
     }

@@ -264,6 +264,11 @@ main {
     margin-top: 0px;
   }
 }
+@media screen and (max-width: 600px) {
+  .about_us {
+    margin-top: 100px;
+  }
+}
 
 .our_coaches .title {
   font-size: 14px;
@@ -622,16 +627,18 @@ main {
   display: flex;
   align-items: stretch;
   gap: 20px;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 900px) {
   .prices .content_box .inside {
     background: #9a9596;
     padding: 20px 10px;
     border-radius: 10px;
+    flex: 1 1 auto;
   }
 }
 .prices .content_box .price_block {
-  flex: 0 1 25%;
+  flex: 0 1 calc(25% - 15px);
 }
 .prices .content_box .price_block img {
   width: 100%;
@@ -659,6 +666,13 @@ main {
   line-height: 1.15;
   text-align: center;
   color: #000;
+  height: 44px;
+  padding: 0 5px;
+}
+@media screen and (max-width: 900px) {
+  .prices .content_box .price_block .text {
+    height: unset;
+  }
 }
 .prices .content_box .price_block .button {
   margin-top: 50px;
@@ -672,6 +686,13 @@ main {
 @media screen and (max-width: 900px) {
   .prices .content_box .price_block .button {
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .prices .content_box .price_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 600px) {
@@ -707,7 +728,7 @@ main {
 }
 @media screen and (min-width: 1100px) {
   .development .main_img {
-    height: 600px;
+    height: 1000px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 100% 100%;
